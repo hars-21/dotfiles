@@ -4,11 +4,12 @@
 
 - neovim
 - tmux
+- zsh
+- git
 
 ### Language Used:
 
-- lua for neovim
-- bash commands in tmux.Config
-
+- lua
+- bash
 
 
