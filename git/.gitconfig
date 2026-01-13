@@ -1,0 +1,16 @@
+[user]
+	name = Harshil
+	email = harshilgupta.2005@gmail.com
+
+[pull]
+	rebase = false
+
+[init]
+    defaultBranch = main
+
+[alias]
+    st = status
+    co = checkout
+    br = branch
+    ci = commit
+    lg = log --oneline --graph --decorate --all
