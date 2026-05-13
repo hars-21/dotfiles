@@ -23,6 +23,12 @@ export PATH="$HOME/.opencode/bin:$PATH"
 export ZSH="$HOME/.oh-my-zsh"
 export ZSH_DISABLE_COMPFIX=true
 
+# Solana CLI
+export PATH="/Users/harshil/.local/share/solana/install/active_release/bin:$PATH"
+
+# Go (Kind)
+export PATH="/Users/harshil/go/bin:$PATH"
+
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
 plugins=(
@@ -49,14 +55,20 @@ setopt SHARE_HISTORY
 setopt HIST_IGNORE_ALL_DUPS
 setopt HIST_REDUCE_BLANKS
 
-alias ls="ls -G"
-alias ll="ls -lah"
+alias ls="eza"
+alias ll="eza -la --icons"
+alias la="eza -a --icons"
+alias ga="git add ."
 alias gs="git status"
 alias gc="git commit"
 alias gp="git push"
 alias gl="git pull"
 alias v="nvim"
 alias c="clear"
+alias ta="tmux attach -t"
+alias tls="tmux ls"
+alias ports="lsof -i -P | grep LISTEN"
+alias myip="curl ifconfig.me"
 
 run_cpp() {
     if [[ -z "$1" ]]; then
