@@ -1,7 +1,3 @@
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
-
 # Homebrew
 export PATH="/opt/homebrew/bin:$PATH"
 export PATH="/opt/homebrew/opt/postgresql@17/bin:$PATH"
@@ -29,7 +25,7 @@ export PATH="/Users/harshil/.local/share/solana/install/active_release/bin:$PATH
 # Go (Kind)
 export PATH="/Users/harshil/go/bin:$PATH"
 
-ZSH_THEME="powerlevel10k/powerlevel10k"
+ZSH_THEME=""
 
 plugins=(
   git
@@ -41,7 +37,6 @@ plugins=(
 )
 
 source $ZSH/oh-my-zsh.sh
-[[ -f ~/.p10k.zsh ]] && source ~/.p10k.zsh
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
@@ -86,3 +81,4 @@ run_cpp() {
 
 alias cpp="clang++ -std=c++17 -Wall -Wextra -Wpedantic"
 
+eval "$(starship init zsh)"
