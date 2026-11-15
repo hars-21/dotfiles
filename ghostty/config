@@ -1,20 +1,35 @@
-font-family = "JetBrainsMono Nerd Font"
+
+# Theme
+theme = TokyoNight
+
+# Font
+font-family = JetBrainsMono Nerd Font
 font-size = 14
+font-feature = -calt
 
-theme = "Catppuccin Mocha"
+# Window appearance
+window-padding-x = 14
+window-padding-y = 12
+window-padding-balance = true
+window-decoration = true
+window-theme = dark
+macos-titlebar-style = transparent
 
-background-opacity = 0.85
+# Glass / transparency
+background-opacity = 0.88
+background-blur = true
 
-window-padding-x = 10
-window-padding-y = 10
+# Cursor
+cursor-style = block
+cursor-style-blink = false
 
-cursor-style = underline
+# Shell integration
+shell-integration = zsh
 
-macos-titlebar-style = tabs
+# Performance
+working-directory = inherit
+copy-on-select = clipboard
 
-copy-on-select = true
-
-window-save-state = always
-
+# Terminal behavior
 confirm-close-surface = false
-
+mouse-hide-while-typing = true
